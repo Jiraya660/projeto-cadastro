@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,200&display=swap');
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
+@font-face {
+font-family: 'Storm Gust';
+src: url(../fonts/storm_gust/Storm\ Gust.otf) format('opetype'),
+  url(../fonts/storm_gust/Storm\ Gust.ttf) format('truetype');
+font-style: normal;
+}
+
+:root {
+--color1: #3E0409;
+--color2: #040001;
+--color3: #A19A9A;
+--color4: #FFFFFF;
+--background-image: linear-gradient(-50deg, rgb(20, 11, 2), rgb(157, 0, 0));
+--background-image2: linear-gradient(-50deg, #ffffff, #A19A9A);
+--fontPrincipal: 'Storm Gust';
+--font2: 'Kanit';
+--font3: 'Aboreto';
+}
+
+* {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-color: rgb(70, 5, 10);
+}
+
+#cabeçalho{
+  width: 100vw;
+  height: 85px;
+  background-image: linear-gradient(to top, black, transparent);
+}
+
+/*---Título principal---*/
+#container {
+  width: 100vw;
+  position: relative;
+}
+
+#content {
+  position: absolute;
+  top: 15px;
+}
+
+#tinta {
+  margin-left: 385px;
+  font-family: var(--fontPrincipal);
+  font-size: 3em;
+  color: rgb(161, 154, 154);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.0955);
+}
+
+#tinta:hover {
+  cursor: pointer;
+}
+
+/* Conteúdo */
+#entrada {
+  width: 500px;
+  height: 320px;
+  border: 2px solid black;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 325px;
+  background-color: var(--color2);
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  font-family: var(--font3);
+  box-shadow: 1px -2.5px 8px var(--color4);
+}
+
+/* config. cadastra-se */
+#are::after {
+  content: '';
+  height: 4px;
+  width: 200px;
+  display: block;
+  background-image: var(--background-image2);
+  border-radius: 2px;
+}
+
+#are {
+  background-image: var(--background-image2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+#cubo {
+  font-family: var(--font3);
+  font-size: 15px;
+  margin-left: 10px;
+}
+.porta {
+  margin: 8px;
+  font-size: 2em;
+}
+
+/* Input de login */
+.buttom {
+  position: absolute;
+  margin-top: 60px;
+  color: var(--color4);
+  font-size: 25px;
+  width: 80px;
+  font-family: var(--font2);
+  background-image: linear-gradient(-50deg, rgb(20, 11, 2), rgb(157, 0, 0));
+  border-radius: 13px;
+  text-align: center;
+  text-decoration: none;
+  padding: 3px;
+}
+
+/*Input delete com gambiarra (lol lol)*/
+.portas {
+  position: relative;
+}
+
+.button {
+  padding: 3px;
+  margin-top: 60px;
+  margin-left: 350px;
+  color: var(--color4);
+  font-size: 25px;
+  font-family: var(--font2);
+  background-image: linear-gradient(-50deg, rgb(20, 11, 2), rgb(157, 0, 0));
+  cursor: pointer;
+  border-radius: 13px;
+}
+
+#ethernet {
+  margin-top: 20px;
+}
+/*Espaçamento das caixa do input*/
+.nick {
+  height: 20px;
+  margin-left: 20px;
+}
+
+.inputs {
+  height: 20px;
+  margin-left: 50px;
+}
+.input {
+ height: 20px;
+ margin-left: 43px;
+}
+
+.nick:focus {
+ background-color: var(--color3);
+ color: var(--color4);
+}
+
+.inputs:focus {
+ background-color: var(--color3);
+ color: var(--color4);
+}
+
+.input:focus {
+ background-color: var(--color3);
+ color: var(--color4);
+}
+
+/*Config das letras degrade*/
+.laibel {
+  background-image: linear-gradient(-50deg , rgba(227, 223, 219, 0.404), rgb(157, 0, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+/*Saiba mais e checkbox*/
+#but {
+  position: relative;
+  font-size: 10px;
+}
+
+#autorais {
+  position: relative;
+  margin-top: 10px;
+}
+
+#sub {
+  position: relative;
+  text-decoration: none;
+  color: var(--color3);
+  text-shadow: 1px 1px 1.3px var(--color4);
+}
