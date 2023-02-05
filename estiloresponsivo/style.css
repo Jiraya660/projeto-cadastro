@@ -207,3 +207,189 @@ body {
   text-decoration: none;
   color: var(--color3);
 }
+
+/* Media Query Responsive - TABLET */
+@media screen and (min-width: 768px) and (max-width: 1114px) {
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  body {
+    background-color: rgb(70, 5, 10);
+  }
+
+  #cabeçalho {
+    background-image: var(--background-image);
+    height: 105px;
+  }
+  
+  /*---Título principal---*/
+  #container {
+    width: 100vw;
+    position: relative;
+  }
+  
+  #content {
+    position: absolute;
+    top: 15px;
+  }
+  
+  #tinta {
+    margin-top: 15px;
+    margin-left: 160px;
+    margin-right: 15px;
+    font-family: var(--fontPrincipal);
+    font-size: 3em;
+    color: var(--color3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.955);
+  }
+  
+  #tintar:hover {
+    cursor: pointer;
+  }
+  
+  /*Conteúdo*/
+  #entrada {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 50px;
+    background-color: var(--color2);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    font-family: var(--font3);
+    box-shadow: 1px -2.5px 8px var(--color4);
+  }
+  
+  /*Config cadastra-se*/
+  #are::after {
+    content:'';
+    height: 4px;
+    width: 290px;
+    display: block;
+    background-image: var(--background-image2);
+    border-radius: 2px;
+  }
+  
+  #are {
+    background-image: var(--background-image2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+    font-size: 3em;
+  }
+
+  .porta {
+    margin: 8px;
+    font-size: 1.5em;
+  }
+  
+  /*Input de login*/
+  .buttom {
+    position: absolute;
+    margin-top: 92px;
+    color: var(--color4);
+    font-size: 25px;
+    padding: 5px;
+    width: 80px;
+    font-family: var(--font2);
+    background-image: var(--background-image);
+    cursor: pointer;
+    border-radius: 13px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /*Input delete com gambiarra (lol lol)*/
+  .button {
+    margin-top: 92px;
+    margin-left: 280px;
+    color: var(--color4);
+    font-size: 25px;
+    width: 80px;
+    padding: 5px;
+    font-family: var(--font2);
+    background-image: linear-gradient(-50deg, rgb(20, 11, 2), rgb(157, 0, 0));
+    cursor: pointer;
+    border-radius: 13px;
+  }
+  
+  .porta::after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    display: block;
+    background-image: linear-gradient(-50deg, rgb(20, 11, 2), rgb(157, 0, 0));
+    border-radius: 2px;
+  }
+  
+  /*Espaçamento das caixa do input*/
+  .nick {
+    margin-top: 55px;
+    height: 20px;
+    margin-left: 37px;
+  }
+  
+  .inputs {
+    height: 20px;
+    margin-left: 72px;
+  }
+  
+  .input {
+    height: 20px;
+    margin-left: 59px;
+  }
+  
+  .nick:focus {
+    background-color: var(--color3);
+    color: var(--color4);
+  }
+  
+  .inputs:focus {
+    background-color: var(--color3);
+    color: var(--color4);
+  }
+  
+  .input:focus {
+    background-color: var(--color3);
+    color: var(--color4);
+  }
+  
+  /*Config das letras degrade*/
+  .laibel {
+    background-image: linear-gradient(-50deg , rgba(227, 223, 219, 0.404), rgb(157, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  /*Saiba mais e checkbox*/
+  #but {
+    position: relative;
+    font-size: 10px;
+  }
+  
+  #autorais {
+    margin-top: 12px;
+  }
+  
+  #sub {
+    position: relative;
+    text-decoration: none;
+    color: var(--color3);
+  }
+  
+}

@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,200&display=swap');
+
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
+@font-face {
+  font-family: 'Storm Gust';
+  src: url(../fonts/storm_gust/Storm\ Gust.otf) format('opetype'),
+    url(../fonts/storm_gust/Storm\ Gust.ttf) format('truetype');
+  font-style: normal;
+}
+
+:root {
+  --color1: #3E0409;
+  --color2: #040001;
+  --color3: #A19A9A;
+  --color4: #FFFFFF;
+  --background-image: linear-gradient(-50deg, rgb(20, 11, 2), rgb(157, 0, 0));
+  --background-image2: linear-gradient(-50deg, #ffffff, #A19A9A);
+  --fontPrincipal: 'Storm Gust';
+  --font2: 'Kanit';
+  --font3: 'Aboreto';
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-color: rgb(70, 5, 10);
+}
+
+#cabeçalho {
+  background-image: var(--background-image);
+  height: 40px;
+}
+
+/*---Título principal---*/
+#container {
+  width: 100vw;
+  position: relative;
+}
+
+#content {
+  position: absolute;
+}
+
+#tinta {
+  margin-bottom: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: var(--fontPrincipal);
+  font-size: 12px;
+  color: var(--color3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.955);
+}
+
+#tintar:hover {
+  cursor: pointer;
+}
+
+/*Conteúdo*/
+#entrada {
+  position: absolute;
+  width: 145px;
+  height: 380px;
+  margin-top: 15px;
+  margin-left: 8px;
+  background-color: var(--color2);
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  font-family: var(--font3);
+  box-shadow: 1px -2.5px 8px var(--color4);
+}
+
+/*Config cadastra-se*/
+#are::after {
+  content:'';
+  height: 4px;
+  width: 75px;
+  display: block;
+  background-image: var(--background-image2);
+  border-radius: 2px;
+}
+
+#are {
+  background-image: var(--background-image2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+#entrada p {
+  font-size: 5px;
+}
+
+
+/*Config das letras degrade*/
+.laibel {
+  background-image: linear-gradient(-50deg , rgba(227, 223, 219, 0.404), rgb(157, 0, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*Espaçamento das caixa do input*/
+.nick {
+  height: 25px;
+  width: 85px;
+  margin-left: 4px;
+}
+
+.inputs {
+  height: 25px;
+   width: 85px;
+  margin-left: 4px;
+}
+
+.input {
+  height: 25px;
+   width: 85px;
+  margin-left: 4px;
+}
+
+.nick:focus {
+  background-color: var(--color3);
+  color: var(--color4);
+}
+
+.inputs:focus {
+  background-color: var(--color3);
+  color: var(--color4);
+}
+
+.input:focus {
+  background-color: var(--color3);
+  color: var(--color4);
+}
+
+/*Saiba mais e checkbox*/
+#but {
+  position: relative;
+  font-size: 5px;
+}
+
+#autorais {
+  margin-top: 20px;
+  height: 10px;
+  width: 20px;
+}
+
+#sub {
+  position: relative;
+  text-decoration: none;
+  color: var(--color3);
+}
+
+/*Input de login*/
+.buttom {
+  position: absolute;
+  color: var(--color4);
+  font-size: 15px;
+  padding: 5px;
+  width: 50px;
+  font-family: var(--font2);
+  background-image: var(--background-image);
+  cursor: pointer;
+  border-radius: 13px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*Input delete com gambiarra (lol lol)*/
+.button {
+  margin-left: 59px;
+  color: var(--color4);
+  font-size: 15px;
+  width: 50px;
+  padding: 5px;
+  font-family: var(--font2);
+  background-image: linear-gradient(-50deg, rgb(20, 11, 2), rgb(157, 0, 0));
+  cursor: pointer;
+  border-radius: 13px;
+}
